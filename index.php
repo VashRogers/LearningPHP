@@ -38,6 +38,14 @@
                         <li><a href="exercicio.php?dir=tipos&file=conversoes">Conversões PHP</a></li>
                     </ul>
                 </div>
+                <div class="modulo azul">
+                    <h3>Básico</h3>
+                    <ul>
+                        <li><a href="exercicio.php?dir=variaveis&file=basico">Variaveis</a></li>
+                        
+
+                    </ul>
+                </div>
             </nav>
         </div>
     </main>
