@@ -42,8 +42,17 @@
                     <h3>Básico</h3>
                     <ul>
                         <li><a href="exercicio.php?dir=variaveis&file=basico">Variaveis</a></li>
+                        <li><a href="exercicio.php?dir=variaveis&file=atribuicoes">Atribuições </a></li>
+                        <li><a href="exercicio.php?dir=variaveis&file=interpolacao">Interpolacao </a></li>
+                        <li><a href="exercicio.php?dir=variaveis&file=variaveis_variaveis">Variaveis Variáveis </a></li>
+                        <li><a href="exercicio.php?dir=variaveis&file=valor_referencia">Variaveis x Referência </a></li>
+                        <li><a href="exercicio.php?dir=variaveis&file=constantes">Constantes </a></li>
+                    </ul>
+                </div>
+                <div class="modulo roxo">
+                    <h3>Estruturas de Controle</h3>
+                    <ul>
                         
-
                     </ul>
                 </div>
             </nav>

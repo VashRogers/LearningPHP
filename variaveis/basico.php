@@ -39,3 +39,8 @@ $_var_4 = 'valida';
 $vãr5 = 'valida';//evitar acento
 // $6var = 'invalida';
 // $%var = 'invalida';
+
+//Variável pré-definida:
+
+echo '<br>';
+var_dump($_SERVER['HTTP_HOST']);
