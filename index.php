@@ -59,6 +59,16 @@
                         <li><a href="exercicio.php?dir=controle&file=switch">Switch</a></li>
                     </ul>
                 </div>
+                <div class="modulo laranja">
+                    <h3>Arrays</h3>
+                    <ul>
+                        <li><a href="exercicio.php?dir=array&file=basico">Básico</a></li>
+                        <li><a href="exercicio.php?dir=array&file=mapa">Mapas Array</a></li> 
+                        <li><a href="exercicio.php?dir=array&file=operacoes">Operações com Array</a></li>
+                        <li><a href="exercicio.php?dir=array&file=multi">Array Multidimensional</a></li>
+
+                    </ul>
+                </div>
             </nav>
         </div>
     </main>
