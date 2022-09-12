@@ -53,6 +53,10 @@
                     <h3>Estruturas de Controle</h3>
                     <ul>
                         <li><a href="exercicio.php?dir=controle&file=if_else">If/Else</a></li>
+                        <li><a href="exercicio.php?dir=controle&file=operadoresRelacionais">Operadores Relacionains</a></li>
+                        <li><a href="exercicio.php?dir=controle&file=operadoresLogicos">Operadores Lógicos</a></li>
+                        <li><a href="exercicio.php?dir=controle&file=operadorTernario">Operador Ternário</a></li>
+                        <li><a href="exercicio.php?dir=controle&file=switch">Switch</a></li>
                     </ul>
                 </div>
             </nav>
