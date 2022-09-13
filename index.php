@@ -72,6 +72,14 @@
                         <li><a href="exercicio.php?dir=array&file=comparacao">Comparação Arrays</a></li>
                     </ul>
                 </div>
+                <div class="modulo verde-escuro">
+                    <h3>Repetições</h3>
+                    <ul>
+                        <li><a href="exercicio.php?dir=repeticoes&file=for">FOR</a></li>
+                        <li><a href="exercicio.php?dir=repeticoes&file=foreach">FOREACH</a></li>
+                        <li><a href="exercicio.php?dir=repeticoes&file=break_continue">Break/Continue</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </main>
