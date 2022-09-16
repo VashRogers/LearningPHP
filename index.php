@@ -95,11 +95,16 @@
                     </ul>
                 </div>
                 <div class="modulo azul-escuro">
-                    <h3>Paradima O.O.</h3>
+                    <h3>Paradigma O.O.</h3>
                     <ul>
                         <li><a href="exercicio.php?dir=classes_objetos&file=classe">Primeira Classe</a></li>
                         <li><a href="exercicio.php?dir=classes_objetos&file=desafio_data">Desafio Classe Data</a></li>
                         <li><a href="exercicio.php?dir=classes_objetos&file=construtor_destrutor">Construtor e Destrutor</a></li>
+                        <li><a href="exercicio.php?dir=classes_objetos&file=heranca">Herança</a></li>
+                        <li><a href="exercicio.php?dir=classes_objetos&file=visibilidade">Visibilidade</a></li>
+                        <li><a href="exercicio.php?dir=classes_objetos&file=static">Membros estáticos</a></li>
+                        <li><a href="exercicio.php?dir=classes_objetos&file=interface">Interface</a></li>
+                        <li><a href="exercicio.php?dir=classes_objetos&file=abstract">Classe Abstrata</a></li>
                     </ul>
                 </div>
             </nav>
