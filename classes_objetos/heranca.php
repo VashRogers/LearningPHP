@@ -24,7 +24,7 @@ class Pessoa{
 
 }
 
-class Usuario extends Pessoa {
+class User extends Pessoa {
     public $login;
     
     function __construct($nome, $idade, $login){
@@ -46,7 +46,7 @@ class Usuario extends Pessoa {
     }
 }
 
-$usuario = new Usuario('Maycon Antonio', 21, 'sadmayco_');
+$usuario = new User('Maycon Antonio', 21, 'sadmayco_');
 $usuario->show();
 unset($usuario);
 
