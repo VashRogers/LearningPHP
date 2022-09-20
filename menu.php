@@ -107,4 +107,11 @@
             <li><a href="exercicio.php?dir=includes&file=include_once">Include Once</a></li>
         </ul>
     </div>
+    <div class="modulo verde">
+        <h3>Namespaces</h3>
+        <ul>
+            <li><a href="exercicio.php?dir=namespace&file=basico">Exemplo Básico</a></li>
+            <li><a href="exercicio.php?dir=namespace&file=use_as">Use/As</a></li>
+        </ul>
+    </div>
 </nav>
