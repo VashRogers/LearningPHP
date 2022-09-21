@@ -122,4 +122,11 @@
             
         </ul>
     </div>
+    <div class="modulo roxo-escuro">
+        <h3>Sessao e Cookie</h3>
+        <ul>
+            <li><a href="exercicio.php?dir=sessao&file=basico_sessao">Básico Sessão</a></li>
+            <li><a href="exercicio.php?dir=sessao&file=gerenciando_sessao">Gerenciando Sessão</a></li>
+        </ul>
+    </div>
 </nav>
