@@ -1,3 +1,17 @@
+<?php 
+    session_start();
+    
+    if($_COOKIE['usuario']){
+        $_SESSION['usuario'] = $_COOKIE['usuario'];
+    }
+    
+    if(!$_SESSION['usuario']){
+        header('Location: login.php');
+    }
+
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +20,16 @@
     <link rel="stylesheet" href="recursos/css/estilo.css">
     <title>Curso PHP</title>
 </head>
-<body>
+<body class="login">
     <header class="cabecalho">
         <h1>Curso PHP</h1>
         <h2>Índice dos Exercícios</h2>
     </header>
+    <nav class='navegacao'>
+        <!-- <p>Maycon</p> -->
+        <span class='usuario'>Usuário: <?= $_SESSION['usuario'] ?></span>
+        <a href="logout.php">Sair!</a>
+    </nav>
     <main class="principal">
         <div class="conteudo">
             <?php 
