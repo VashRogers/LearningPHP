@@ -137,4 +137,10 @@
             <li><a href="exercicio.php?dir=api&file=ler_arquivo">Ler Arquivo</a></li>
         </ul>
     </div>
+    <div class="modulo azul-escuro">
+        <h3>Formulário</h3>
+        <ul>
+            <li><a href="exercicio.php?dir=formulario&file=formulario">Formulário</a></li>
+        </ul>
+    </div>
 </nav>
