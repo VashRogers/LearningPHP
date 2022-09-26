@@ -143,4 +143,10 @@
             <li><a href="exercicio.php?dir=formulario&file=formulario">Formulário</a></li>
         </ul>
     </div>
+    <div class="modulo vermelho-escuro">
+        <h3>Banco de Dados</h3>
+        <ul>
+            <li><a href="exercicio.php?dir=db&file=criar_banco">Criar Banco</a></li>
+        </ul>
+    </div>
 </nav>
