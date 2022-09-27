@@ -1,8 +1,8 @@
 <?php
 
 function novaConexao ($banco = 'curso_php') {
-    $servidor = 'localhost:3307';
-    $usuario = 'genesis';
+    $servidor = 'database';
+    $usuario = 'root';
     $senha = 'genesis';
     
     $conexao = new mysqli($servidor, $usuario, $senha, $banco);

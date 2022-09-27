@@ -1,12 +1,12 @@
-<div class="titulo">Criar Banco</div>
+<div class="titulo">Excluir Registro</div>
 
 <?php
 
 require_once "conexao.php";
 
-$conexao = novaConexao(null);
+$sql = "DELETE FROM cadastro WHERE id = 3";
 
-$sql = 'CREATE DATABASE IF NOT EXISTS curso_php';
+$conexao = novaConexao();
 
 $resultado = $conexao->query($sql);
 

@@ -147,6 +147,12 @@
         <h3>Banco de Dados</h3>
         <ul>
             <li><a href="exercicio.php?dir=db&file=criar_banco">Criar Banco</a></li>
+            <li><a href="exercicio.php?dir=db&file=criar_tabela">Criar Tabela</a></li>
+            <li><a href="exercicio.php?dir=db&file=inserir_1">Inserir 1</a></li>
+            <li><a href="exercicio.php?dir=db&file=consultar">Consultar </a></li>
+            <li><a href="exercicio.php?dir=db&file=excluir_1">Excluir Registro#1</a></li>
+            <li><a href="exercicio.php?dir=db&file=excluir_2">Excluir Registro#2</a></li>
+            <li><a href="exercicio.php?dir=db&file=inserir_2">Inserir #2</a></li>
         </ul>
     </div>
 </nav>
