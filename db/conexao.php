@@ -13,3 +13,4 @@ function novaConexao ($banco = 'curso_php') {
 
     return  $conexao;
 }
+

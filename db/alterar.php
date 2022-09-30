@@ -1,7 +1,33 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<div class="titulo">Alterar Registro!</div>
+
+<?php
+require_once "conexao.php";
+        
+$conexao = novaConexao();
+
+if($_GET['codigo']){
+    $sql = "SELECT * FROM cadastro WHERE id = ?";
+
+    $stmt = $conexao->prepare($sql);
+    $stmt->bind_param("i", $_GET['codigo']);
 
 
-<?php 
+    if($stmt->execute()){
+        $resultado = $stmt->get_result();
+        
+        if($resultado->num_rows > 0){
+            $dados = $resultado->fetch_assoc();
+            if($dados['nascimento']){
+                $dt = new DateTime($dados['nascimento']);
+                $dados['nascimento'] = $dt->format('d/m/Y');
+            }
+        }
+    }
+}
+
+
+
 if(count($_POST) > 0) {
     $dados = $_POST;
     $erros = [];
@@ -42,13 +68,10 @@ if(count($_POST) > 0) {
     }
 
     if(count($erros) == 0){
-        require_once "conexao.php";
         
-        $conexao = novaConexao();
-
-        $sql = "INSERT INTO cadastro (
-            nome, nascimento, email, site, filhos, salario
-        ) VALUES (?, ?, ?, ?, ?, ?)";
+        $sql = "UPDATE cadastro 
+                SET nome = ?, nascimento = ?, email = ?, site = ?, filhos = ?, salario = ?
+                WHERE id = ?";
 
         $stmt = $conexao->prepare($sql);
 
@@ -59,9 +82,10 @@ if(count($_POST) > 0) {
             $dados['site'],
             $dados['filhos'],
             $dados['salario'],
+            $dados['id'],
         ];
 
-        $stmt->bind_param("ssssid", ...$params);
+        $stmt->bind_param("ssssidi", ...$params);
         
 
         if($stmt->execute()){
@@ -78,7 +102,28 @@ if(count($_POST) > 0) {
     <!-- </div> -->
 <?php endforeach ?>
 
+<form action="exercicio.php" method="GET">
+    <input type="hidden" name="dir" value="db">
+    <input type="hidden" name="file" value="alterar">
+    <div class="form-group row">
+        <div class="col-sm-10">
+            <input 
+                class="form-control"
+                type="number" 
+                name="codigo" 
+                value="<?= $_GET['codigo'] ?>" 
+                placeholder="Informe o código de consulta"
+            >
+        </div>
+        <div class="sm-2">
+            <button class="btn btn-success m-8">Consultar</button>
+        </div>
+    </div>
+</form>
+
+
 <form action="#" method="post">
+    <input type="hidden" name="id" value="<?= $dados['id'] ?>">
     <div class="form-row">
         <div class="form-group col-md-8">
             <label for="nome">Nome</label>
